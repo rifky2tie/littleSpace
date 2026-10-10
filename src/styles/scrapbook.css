@@ -1,0 +1,451 @@
+/* ==========================================================================
+   OUR LITTLE SPACE — SCRAPBOOK & COZY ROMANTIC STYLES
+   ========================================================================== */
+
+:root {
+  /* Color Palette */
+  --bg-dark-navy: #0e1626;
+  --bg-deep-navy: #152238;
+  --bg-midnight: #1a2a44;
+  --bg-warm-cream: #fbf8f3;
+  --paper-cream: #fdfbf7;
+  --paper-border: #ede4d8;
+  
+  --pink-muted: #e08da0;
+  --pink-soft: #f4b8c5;
+  --pink-glow: rgba(244, 184, 197, 0.35);
+  
+  --lavender-soft: #c8b9ea;
+  --lavender-muted: #9d83cf;
+  
+  --text-primary: #f5f3f0;
+  --text-muted: #a6b0c3;
+  --text-dark: #2c2830;
+  --text-dark-muted: #6b6375;
+  
+  --tape-color: rgba(245, 222, 179, 0.45);
+  --tape-pink: rgba(244, 184, 197, 0.45);
+
+  /* Fonts */
+  --font-ui: 'Quicksand', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-hand: 'Caveat', cursive;
+
+  /* Shadows */
+  --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.25);
+  --shadow-polaroid: 0 10px 25px -4px rgba(0, 0, 0, 0.35), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+  --shadow-glow: 0 0 20px rgba(244, 184, 197, 0.25);
+}
+
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: var(--font-ui);
+  background-color: var(--bg-dark-navy);
+  color: var(--text-primary);
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  position: relative;
+  line-height: 1.5;
+}
+
+/* Grain Overlay Effect */
+.grain-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* App Container */
+.app-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 95px; /* space for mobile bottom nav */
+}
+
+/* Starry Sky Background Animation */
+.stars-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.star-twinkle {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: twinkle 3s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.8); }
+  50% { opacity: 0.9; transform: scale(1.3); }
+}
+
+/* Scrapbook Paper Card */
+.paper-card {
+  background: var(--paper-cream);
+  color: var(--text-dark);
+  border-radius: 20px;
+  padding: 24px;
+  position: relative;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--paper-border);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Dark Navy Card */
+.navy-card {
+  background: rgba(21, 34, 56, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(244, 184, 197, 0.15);
+  border-radius: 22px;
+  padding: 22px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Washi Tape Effect */
+.washi-tape {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-1deg);
+  width: 110px;
+  height: 26px;
+  background: var(--tape-color);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  opacity: 0.85;
+  clip-path: polygon(3% 0%, 97% 2%, 100% 98%, 0% 95%);
+  z-index: 5;
+}
+
+.washi-tape-pink {
+  background: var(--tape-pink);
+}
+
+.washi-tape-corner-left {
+  top: -10px;
+  left: 14px;
+  transform: rotate(-12deg);
+}
+
+.washi-tape-corner-right {
+  top: -10px;
+  right: 14px;
+  transform: rotate(14deg);
+}
+
+/* Polaroid Card */
+.polaroid-card {
+  background: #ffffff;
+  padding: 14px 14px 22px 14px;
+  border-radius: 4px;
+  box-shadow: var(--shadow-polaroid);
+  position: relative;
+  color: var(--text-dark);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.polaroid-card:hover {
+  transform: translateY(-5px) rotate(0deg) scale(1.02) !important;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.35);
+  z-index: 10;
+}
+
+.polaroid-image-wrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #f0ebe4;
+  border-radius: 2px;
+}
+
+.polaroid-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.polaroid-caption {
+  font-family: var(--font-hand);
+  font-size: 1.25rem;
+  color: #3b3540;
+  text-align: center;
+  margin-top: 12px;
+  line-height: 1.25;
+}
+
+.polaroid-date {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  color: #8c8294;
+  text-align: center;
+  margin-top: 4px;
+  letter-spacing: 0.5px;
+}
+
+/* Handwritten Accent */
+.handwritten {
+  font-family: var(--font-hand);
+}
+
+/* Floating Heart Element */
+.floating-heart {
+  position: fixed;
+  pointer-events: none;
+  z-index: 999;
+  animation: floatUp 2.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(0.6) rotate(0deg);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translateY(-80px) scale(1.2) rotate(15deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-160px) scale(1.4) rotate(-20deg);
+  }
+}
+
+/* Cute Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, #f4b8c5 0%, #e08da0 100%);
+  color: #2b1720;
+  font-weight: 600;
+  border: none;
+  border-radius: 999px;
+  padding: 13px 26px;
+  font-size: 0.98rem;
+  font-family: var(--font-ui);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 4px 15px rgba(224, 141, 160, 0.4);
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.btn-primary:active {
+  transform: scale(0.95);
+}
+
+.btn-kangen {
+  background: linear-gradient(145deg, #fdf6ec, #fae9d7);
+  border: 2px solid #f4b8c5;
+  color: #593540;
+  border-radius: 999px;
+  padding: 16px 36px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(244, 184, 197, 0.35);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.18s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.18s ease;
+}
+
+.btn-kangen:hover {
+  box-shadow: 0 8px 25px rgba(244, 184, 197, 0.55);
+}
+
+.btn-kangen:active {
+  transform: scale(0.92);
+}
+
+.btn-danger-kangen {
+  background: linear-gradient(135deg, #e63946 0%, #d90429 100%);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 20px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 4px 16px rgba(217, 4, 41, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.btn-danger-kangen:active {
+  transform: scale(0.94);
+}
+
+/* Screen Shake effect for hugs */
+.shake-animation {
+  animation: gentleShake 0.45s ease-in-out;
+}
+
+@keyframes gentleShake {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  20% { transform: translate(-3px, 2px) rotate(-1deg); }
+  40% { transform: translate(3px, -2px) rotate(1deg); }
+  60% { transform: translate(-2px, -1px) rotate(-0.5deg); }
+  80% { transform: translate(2px, 1px) rotate(0.5deg); }
+}
+
+/* Bottom Navigation Pill */
+.bottom-nav {
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 90;
+  background: rgba(18, 27, 44, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(244, 184, 197, 0.22);
+  border-radius: 999px;
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  max-width: 92vw;
+}
+
+.nav-item {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+  transition: all 0.22s ease;
+  white-space: nowrap;
+}
+
+.nav-item.active {
+  color: #2b1720;
+  background: linear-gradient(135deg, #f4b8c5 0%, #e08da0 100%);
+  box-shadow: 0 2px 10px rgba(244, 184, 197, 0.4);
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(7, 11, 20, 0.78);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  z-index: 100;
+}
+
+.modal-content {
+  background: var(--paper-cream);
+  color: var(--text-dark);
+  border-radius: 24px;
+  max-width: 480px;
+  width: 100%;
+  padding: 28px 24px;
+  position: relative;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+/* Checkbox Style for Monolog Kit */
+.custom-check-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.custom-check-item:hover {
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.custom-check-item.completed {
+  background: rgba(244, 184, 197, 0.12);
+  border-color: rgba(244, 184, 197, 0.35);
+}
+
+.custom-check-item.completed .check-label {
+  text-decoration: line-through;
+  opacity: 0.65;
+}
+
+.check-box {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  border: 2px solid var(--pink-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.custom-check-item.completed .check-box {
+  background: var(--pink-soft);
+  color: #2b1720;
+}
+
+/* Cute Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(244, 184, 197, 0.3);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(244, 184, 197, 0.6);
+}
