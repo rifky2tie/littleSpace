@@ -19,7 +19,7 @@ export const loveConfig = {
   // Rentang Waktu LDR (Format: YYYY-MM-DD)
   // Default diatur mulai hari ini selama 10 hari.
   // Kamu bisa sesuaikan tanggal pastinya di bawah ini:
-  startDate: "2026-10-10",
+  startDate: "2026-10-11",
   endDate: "2026-10-19",
   totalDays: 10,
 
