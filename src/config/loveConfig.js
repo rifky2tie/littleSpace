@@ -50,7 +50,7 @@ export const loveConfig = {
     1: "hari pertama. masih sok kuat.",
     2: "mulai kerasa nih kangennya.",
     3: "oke... ternyata 10 hari lama juga.",
-    4: "aku mulai sering buka chat kita.",
+    4: "aku mulai sering liatin foto kita.",
     5: "setengah perjalanan. jangan menyerah.",
     6: "aku masih nunggu kamu pulang.",
     7: "tinggal 3 hari lagi. 🥹",
@@ -89,51 +89,51 @@ export const loveConfig = {
     },
     {
       day: 3,
-      title: "Hari Ketiga: Mulai Berasa Sepi",
+      title: "Hari Ketiga: Dari Jauh, Aku Menemanimu",
       teaser: "jujur dari lubuk hati...",
-      content: "hari ketiga. ternyata aku udah mulai kangen banget."
+      content: "andai aku bisa, aku pengen ada di samping kamu sekarang, nemenin kamu sampai rasa lelah itu sedikit mereda. tapi untuk saat ini, izinkan aku tetap jadi orang yang selalu menyemangati kamu dari jauh."
     },
     {
       day: 4,
       title: "Hari Keempat: Selalu Bangga",
       teaser: "kalau harimu terasa berat...",
-      content: "kalau hari ini terasa berat, ingat kalau ada seseorang yang selalu bangga sama kamu."
+      content: "aku seneng kamu lagi ngejalanin sesuatu yang penting buat kamu, jadi kasih yang terbaik ya, sayang. aku pengen kamu punya banyak alasan buat bangga sama diri kamu sendiri."
     },
     {
       day: 5,
       title: "Hari Kelima: Setengah Perjalanan",
       teaser: "separuh jalan terlewati...",
-      content: "setengah perjalanan. kita hampir sampai."
+      content: "setengah perjalanan udah kita lewati, sayang. sedikit lagi, ya? aku nggak sabar sampai akhirnya bisa ketemu dan meluk kamu lagi."
     },
     {
       day: 6,
       title: "Hari Keenam: Jangan Telat Makan",
       teaser: "pengingat kecil dari aku...",
-      content: "aku harap hari ini kamu makan yang cukup dan tidur yang cukup."
+      content: "jangan lupa makan yang cukup dan istirahat yang baik, ya, sayang. aku pengen kamu selalu sehat, karena masih banyak hari yang ingin aku habiskan sama kamu."
     },
     {
       day: 7,
       title: "Hari Ketujuh: Kamu Luar Biasa",
       teaser: "tinggal menghitung jari...",
-      content: "tinggal sedikit lagi. kamu hebat."
+      content: "tinggal sedikit lagi, sayang. kamu hebat udah bertahan sejauh ini, dan aku bangga banget sama kamu. sebentar lagi, ya, sampai kita bisa ketemu lagi."
     },
     {
       day: 8,
       title: "Hari Kedelapan: Tak Sabar",
       teaser: "fokusku sudah mulai beda...",
-      content: "aku udah mulai menghitung hari bukan karena lombanya, tapi karena pengen ketemu kamu."
+      content: "akhir-akhir ini aku sering ngitung hari, membayangkan kapan akhirnya bisa ketemu kamu lagi. sebentar lagi, sayang. sebentar lagi."
     },
     {
       day: 9,
       title: "Hari Kesembilan: H-1 Menuju Pulang",
       teaser: "satu tidur lagi...",
-      content: "besok. akhirnya."
+      content: "besok, akhirnya. orang yang selama ini cuma bisa aku rindukan dari jauh, sebentar lagi ada di hadapanku lagi"
     },
     {
       day: 10,
       title: "Hari Kesepuluh: Selamat Datang Kembali",
       teaser: "surat terakhir untuk ldr kita...",
-      content: "selamat pulang. aku kangen kamu banget."
+      content: "selamat pulang, sayang. akhirnya penantian ini selesai, dan aku bisa ketemu kamu lagi. kamu nggak tahu seberapa kangennya aku selama ini."
     }
   ],
 
