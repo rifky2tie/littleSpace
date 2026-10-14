@@ -103,31 +103,31 @@ export const loveConfig = {
       day: 5,
       title: "Hari Kelima: Setengah Perjalanan",
       teaser: "separuh jalan terlewati...",
-      content: "setengah perjalanan udah kita lewati, sayang. sedikit lagi, ya? aku nggak sabar sampai akhirnya bisa ketemu dan meluk kamu lagi."
+      content: "setengah perjalanan udah kita lewati, sayang. sedikit lagi, yaa. aku udah nggak sabar buat ketemu kamu lagi, meluk kamu, dan cerita banyak hal yang selama ini cuma bisa kita ceritain lewat chat."
     },
     {
       day: 6,
       title: "Hari Keenam: Jangan Telat Makan",
       teaser: "pengingat kecil dari aku...",
-      content: "jangan lupa makan yang cukup dan istirahat yang baik, ya, sayang. aku pengen kamu selalu sehat, karena masih banyak hari yang ingin aku habiskan sama kamu."
+      content: "tinggal sedikit lagi, sayang. aku bangga banget sama kamu dan semua usaha yang udah kamu lakuin sejauh ini. apa pun hasilnya nanti, buat aku kamu tetap hebat. sebentar lagi kita ketemu lagi, ya. jaga diri baik-baik, cintaku. ❤️"
     },
     {
       day: 7,
       title: "Hari Ketujuh: Kamu Luar Biasa",
       teaser: "tinggal menghitung jari...",
-      content: "tinggal sedikit lagi, sayang. kamu hebat udah bertahan sejauh ini, dan aku bangga banget sama kamu. sebentar lagi, ya, sampai kita bisa ketemu lagi."
+      content: "jangan lupa makan yang cukup dan istirahat yang baik, ya, sayang. aku pengen kamu selalu sehat, karena masih banyak hari yang ingin aku habiskan sama kamu."
     },
     {
       day: 8,
       title: "Hari Kedelapan: Tak Sabar",
       teaser: "fokusku sudah mulai beda...",
-      content: "akhir-akhir ini aku sering ngitung hari, membayangkan kapan akhirnya bisa ketemu kamu lagi. sebentar lagi, sayang. sebentar lagi."
+      content: "akhir-akhir ini aku makin nggak sabar buat ketemu kamu lagi. tinggal sedikit lagi ya, sayang. aku tunggu kamu pulang, biar kita bisa punya waktu bersama lagi."
     },
     {
       day: 9,
       title: "Hari Kesembilan: H-1 Menuju Pulang",
       teaser: "satu tidur lagi...",
-      content: "besok, akhirnya. orang yang selama ini cuma bisa aku rindukan dari jauh, sebentar lagi ada di hadapanku lagi"
+      content: "besok, akhirnya. setelah sekian hari cuma bisa merindukanmu dari jauh, akhirnya aku bisa ketemu kamu lagi. rasanya nggak sabar buat lihat kamu di hadapanku, sayang. ❤️"
     },
     {
       day: 10,
