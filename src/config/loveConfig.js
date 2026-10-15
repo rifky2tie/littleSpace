@@ -107,7 +107,7 @@ export const loveConfig = {
     },
     {
       day: 6,
-      title: "Hari Keenam: Jangan Telat Makan",
+      title: "Hari Keenam: Kamu Hebat, Sayang",
       teaser: "pengingat kecil dari aku...",
       content: "tinggal sedikit lagi, sayang. aku bangga banget sama kamu dan semua usaha yang udah kamu lakuin sejauh ini. apa pun hasilnya nanti, buat aku kamu tetap hebat. sebentar lagi kita ketemu lagi, ya. jaga diri baik-baik, cintaku. ❤️"
     },
